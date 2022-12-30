@@ -5,7 +5,7 @@ let dataWrite = document.querySelector("#data").innerHTML = data
 
 
 function converter(){
-    let url = "http://economia.awesomeapi.com.br/json/last/USD-BRL";
+    let url = "https://economia.awesomeapi.com.br/json/last/USD-BRL";
     let valor = document.querySelector("#valor").value;
     let convertido = document.querySelector("#resposta");
     let cotacao = document.querySelector("#cotacao");
