@@ -2,10 +2,10 @@ let data = new Date();
 console.log(data)
 let dataWrite = document.querySelector("#data").innerHTML = data
 
-let url = "http://economia.awesomeapi.com.br/json/last/USD-BRL"
+
 
 function converter(){
-
+    let url = "http://economia.awesomeapi.com.br/json/last/USD-BRL";
     let valor = document.querySelector("#valor").value;
     let convertido = document.querySelector("#resposta");
     let cotacao = document.querySelector("#cotacao");
