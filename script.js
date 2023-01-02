@@ -8,7 +8,6 @@ function converter(){
     let url = "https://economia.awesomeapi.com.br/json/last/USD-BRL";
     let valor = document.querySelector("#valor").value;
     let convertido = document.querySelector("#resposta");
-    let cotacao = document.querySelector("#cotacao");
 
 fetch(url).then((res)=>{
     return res.json()
