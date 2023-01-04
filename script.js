@@ -12,8 +12,11 @@ function converter(){
 fetch(url).then((res)=>{
     return res.json()
 }).then((date)=>{
+
     let rate = date.USDBRL.bid;
-    let resposta = `Valor a converter: US$ ${valor} <br> Resultado da conversão: R$ ${rate * valor}` 
+    let soma = rate * valor
+   
+    let resposta = `Valor a converter: US$ ${valor} <br> Resultado da conversão: R$ ${soma.toFixed(2)}` 
     
     if(valor === ""){
         alert ("Insira um valor valido")
